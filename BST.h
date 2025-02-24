@@ -124,9 +124,9 @@ void reverse_inOrder(TreeNodePtr treePtr,int space)
    if(treePtr != NULL)
    {
       reverse_inOrder( treePtr->rightPtr,space+3);
-      for(int i=1;i<space;++i)
+      for(int i=0;i<space;++i)
       {
-         printf("  ");
+         printf(" ");
       }
       printf("%3d\n",treePtr->data) ;
       reverse_inOrder( treePtr->leftPtr,space+3);
